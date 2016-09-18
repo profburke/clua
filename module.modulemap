@@ -1,0 +1,5 @@
+module CLua [system] {
+  header "/usr/local/include/lua.h"
+  link "lua"
+  export *
+}
