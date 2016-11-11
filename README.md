@@ -1,6 +1,9 @@
 
 ## CLua
 
+
+## NOTE: the following is the README for Moonbird, not CLua. Will be corrected soon.
+
 Import Lua into Swift.
 
 This module allows you to call the Lua API from Swift, but
