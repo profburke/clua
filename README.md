@@ -2,7 +2,6 @@
 ## CLua
 
 
-## NOTE: the following is the README for Moonbird, not CLua. Will be corrected soon.
 
 Import Lua into Swift.
 
@@ -27,11 +26,13 @@ An example follows:
         ]
      )
 
-##### Sample.swift
+##### Sources/main.swift
     import CLua
     
-    var L = LuaState()
-    
+    var L = luaL_newstate()
+    luaL_openlibs(L)
+    let tos = Int(lua_gettop(L))
+    // ... etc ...
 
 
 #### TODO
